@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="789.0" prefWidth="1118.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="button_add" layoutX="694.0" layoutY="610.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="176.0" text="添加行至表格（可添加多行）" />
+      <Button fx:id="button_del" layoutX="931.0" layoutY="213.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="127.0" text="删除行" />
+      <TableView fx:id="tableview_staff" editable="true" layoutX="7.0" layoutY="63.0" prefHeight="483.0" prefWidth="859.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="108.0" text="ID" />
+          <TableColumn fx:id="colNAME" prefWidth="121.0" text="NAME" />
+            <TableColumn fx:id="colDEPT" prefWidth="127.0" text="DEPT" />
+            <TableColumn fx:id="colJOB" prefWidth="125.0" text="JOB" />
+            <TableColumn fx:id="colYEARS" prefWidth="124.0" text="YEARS" />
+            <TableColumn fx:id="colSALARY" prefWidth="127.0" text="SALARY" />
+            <TableColumn fx:id="colCOMM" prefWidth="126.0" text="COMM" />
+        </columns>
+      </TableView>
+      <Button fx:id="button_use" layoutX="931.0" layoutY="305.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="127.0" text="落实" />
+      <Button fx:id="button_back" layoutX="931.0" layoutY="472.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="127.0" text="回滚" />
+      <Label fx:id="lable1" layoutX="16.0" layoutY="14.0" prefHeight="43.0" prefWidth="789.0" text="                                                                                         对STAFF表进行操作" />
+      <Button fx:id="button_select" layoutX="931.0" layoutY="128.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="127.0" text="查询" />
+      <TextField fx:id="TextID" layoutX="41.0" layoutY="559.0" prefHeight="23.0" prefWidth="111.0" />
+      <TextField fx:id="TextNAME" layoutX="222.0" layoutY="559.0" prefHeight="23.0" prefWidth="168.0" />
+      <TextField fx:id="TextDEPT" layoutX="453.0" layoutY="559.0" prefHeight="23.0" prefWidth="176.0" />
+      <Label layoutX="16.0" layoutY="563.0" text="ID：" />
+      <Label layoutX="161.0" layoutY="563.0" text="NAME：" />
+      <Label layoutX="400.0" layoutY="563.0" text="DEPT：" />
+      <Label layoutX="644.0" layoutY="563.0" text="JOB：" />
+      <TextField fx:id="TextJOB" layoutX="687.0" layoutY="559.0" prefHeight="30.0" prefWidth="182.0" />
+      <Label layoutY="621.0" text="YEARS：" />
+      <TextField fx:id="TextYEARS" layoutX="53.0" layoutY="616.0" prefHeight="23.0" prefWidth="149.0" />
+      <TextField fx:id="TextSALARY" layoutX="265.0" layoutY="616.0" prefHeight="30.0" prefWidth="168.0" />
+      <TextField fx:id="TextCOMM" layoutX="504.0" layoutY="616.0" prefHeight="30.0" prefWidth="176.0" />
+      <Label layoutX="202.0" layoutY="621.0" text="SALARY：" />
+      <Label layoutX="437.0" layoutY="621.0" text="COMM：" />
+      <Button fx:id="button_upd" layoutX="931.0" layoutY="388.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="127.0" text="更新" />
+   </children>
+</Pane>
